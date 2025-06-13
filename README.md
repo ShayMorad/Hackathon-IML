@@ -102,8 +102,8 @@ The dataset (≈ 50 k visits, 34 raw columns) was provided by the course staff.
 ## Part 2 – Tumor-Size Regression <a name="part-2--tumor-size-regression"></a>
 
 * **Target range:** 0 – 140 mm (negatives clipped to 0).  
-* **Models tried:** Linear, ElasticNet, SGD, **Gradient Boosting Trees** (depth 3, 400 estimators).  
-* **Winner:** GBT with dev **MSE ≈ 1.56**.  
+* **Models tried:** Linear, ElasticNet, SGD, **Gradient Boosting Trees**.  
+* **Winner:** GBT with dev **MSE ≈ 1.2**.  
 * **Insights:** Top features – TNM-T stage, Ki-67 percentage, histological grade.
 
 
