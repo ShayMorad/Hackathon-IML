@@ -28,7 +28,7 @@ def get_model(task: str, model_name: str, **kwargs):
         base_model = model_map.get(model_name)
         if base_model is None:
             raise ValueError(f"Unknown classification model: {model_name}")
-        # Update parameters if any
+
         base_model.set_params(**kwargs)
         return MultiOutputClassifier(base_model)
 
